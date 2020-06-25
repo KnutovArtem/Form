@@ -1,0 +1,49 @@
+body, p, input, textarea[placeholder] {
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  color: #000;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: inherit;
+    background: #fff;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+/*recaptcha*/
+.grecaptcha-badge {
+  //display: none;
+}
+
+/*simplebar*/
+.simplebar-visible:before{
+  display: block !important;
+  opacity: 5 !important;
+}
+/*style scroll*/
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: '';
+  background: #007cb2;
+  border-radius: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 5;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
